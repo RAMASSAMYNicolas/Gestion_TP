@@ -33,9 +33,11 @@ echo 'Connexion Etablie'
 				<p>Date d'Achat : <input type="date" name="dateAchat"></p>
 				<p>Choix du Type de Matériel : </p>
 					<p><ul>Type de Matériel : 	
-					<SELECT>							
+					<SELECT>
+						<OPTION> </OPTION>
 						<?php 	
-							$req="SELECT numMarque, nomMarque FROM marque";
+							$req="SELECT numTypeMat, nomTypeMat FROM type_mat";
+							mysqli_query($req);
 							foreach(mysqli_fetch_array($req) as $ligne)
 							{ 
 						?>			
