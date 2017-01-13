@@ -34,10 +34,15 @@ echo 'Connexion Etablie'
 				<p>Choix du Type de Matériel : </p>
 					<p><ul>Type de Matériel : 	
 					<SELECT>							
-						<?php 	$req="SELECT numMarque, nomMarque FROM marque";
-								for($ligne = mysqli_fetch_array($req)){ ?>			
-									<OPTION <?php echo $ligne['numTypeMat'].'. '.$ligne['nomTypeMat']; ?>> </OPTION>
-						<?php	} ?>			
+						<?php 	
+							$req="SELECT numMarque, nomMarque FROM marque";
+							foreach(mysqli_fetch_array($req) as $ligne)
+							{ 
+						?>			
+							<OPTION <?php echo $ligne['numTypeMat'].'. '.$ligne['nomTypeMat'];?>> </OPTION>
+						<?php	
+							} 						
+						?>			
 					</SELECT></ul></p>
 					
 					<p><ul>Marque : 
