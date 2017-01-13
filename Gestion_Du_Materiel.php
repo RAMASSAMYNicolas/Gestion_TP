@@ -37,8 +37,8 @@ echo 'Connexion Etablie'
 						<OPTION> </OPTION>
 						<?php 	
 							$req="SELECT numTypeMat, nomTypeMat FROM type_mat";
-							mysqli_query($req);
-							foreach(mysqli_fetch_array($req) as $ligne)
+							$result = $con->query($query);
+							foreach(mysqli_fetch_array($result) as $ligne)
 							{ 
 						?>			
 							<OPTION <?php echo $ligne['numTypeMat'].'. '.$ligne['nomTypeMat'];?>> </OPTION>
