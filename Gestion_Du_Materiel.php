@@ -16,12 +16,12 @@ echo 'Connexion Etablie'
 			loginEmp				= Identifiants de l'employer
 			numTypeMat				= Catégorie
 			numMarque				= Numero de Marque
-			-->
 			
 			<form name="gestion_materiel" method="POST">
 				<p>Identifiants</p>
 				<p>Login : <input type="text" name="login"></p>
 				<p>Mot de Passe : <input type="text" name="mdp"></p><br>
+			-->	
 				
 <?php
 	//$req="SELECT loginEmp, passwordEmp FROM employe WHERE loginEMP=".$_POST['login']."";
@@ -33,23 +33,20 @@ echo 'Connexion Etablie'
 				<p>Date d'Achat : <input type="date" name="dateAchat"></p>
 				<p>Choix du Type de Matériel : </p>
 					<p><ul>Type de Matériel : 	
-					<SELECT>	
-						<OPTION> </OPTION>
-<?php					
-	
-						<OPTION>1. Ordinateur </OPTION>
-						<OPTION>2. Imprimante </OPTION>
-						<OPTION>3. Scanner </OPTION>
-						<OPTION>4. Réseau </OPTION>
-?>						
+					<SELECT>							
+						<?php 	$req="SELECT numMarque, nomMarque FROM marque";
+								for($ligne = mysqli_fetch_array($req)){ ?>			
+									<OPTION <?php echo $ligne['numTypeMat'].'. '.$ligne['nomTypeMat']; ?>> </OPTION>
+						<?php	} ?>			
 					</SELECT></ul></p>
+					
 					<p><ul>Marque : 
 					<SELECT>	
 						<OPTION> </OPTION>
 						<OPTION>1. Lenovo </OPTION>
 						<OPTION>2. Dell </OPTION>
 						<OPTION>3. Hewtlett-Packard </OPTION>
-						<OPTION>4.Lexmark </OPTION>
+						<OPTION>4. Lexmark </OPTION>
 						<OPTION>5. Canon </OPTION>
 						<OPTION>6. Epson </OPTION>
 						<OPTION>7. Cisco </OPTION>
