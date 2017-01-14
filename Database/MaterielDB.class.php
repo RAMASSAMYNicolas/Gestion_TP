@@ -5,6 +5,7 @@
 
 		$listMateriel = array();
 		$con = new ConnectionDB().getCon();
+		$req = "SELECT * FROM materiel";
 		$result = $con->query($req);
 		while($e = mysqli_fetch_array($result)) {
 			$emp = new Materiel(
