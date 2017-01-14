@@ -42,10 +42,11 @@ echo 'Connexion Etablie'
 						<?php 
 							$req = "SELECT numTypeMat, nomTypeMat FROM type_mat";
 							$result = $con->query($req);
-							while($ligne = mysqli_fetch_array($result))
+							$list = mysqli_fetch_array($result);
+							for($i = 0; $i<$list.size; $i++)
 							{ 
 						?>			
-							<OPTION value="<?php echo $ligne['numTypeMat'].$ligne['nomTypeMat']; ?>"> <?php echo $ligne['numTypeMat'].'. '.$ligne['nomTypeMat']; ?> </OPTION>
+							<OPTION value="<?php echo $ligne['numTypeMat']; ?>"> <?php echo $ligne['nomTypeMat']; ?> </OPTION>
 						<?php	
 							} 						
 						?>			
