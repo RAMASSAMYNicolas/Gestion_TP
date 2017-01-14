@@ -8,7 +8,7 @@ public class ConnectionDB{
 	private $conn;
 
 	fonction __construct() {
-		$conn=mysqli_connect($this->$HOST,$this->HOSTNAME,$this->$PASSWORD,$this->$DBNAME);
+		$this->$conn=mysqli_connect($this->$HOST,$this->HOSTNAME,$this->$PASSWORD,$this->$DBNAME);
 	}
 
 
