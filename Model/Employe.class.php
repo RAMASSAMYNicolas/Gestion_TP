@@ -37,10 +37,10 @@ class Employe {
 	}
 
 	public funcion getName(){
-		return $this->$aNomEmp;
+		return $this->$nomEmp;
 	}
 	public funcion setName($aNomEmp){
-		$this->$NomEmp = $aNomEmp;
+		$this->$nomEmp = $aNomEmp;
 	}
 
 	public funcion getFirstName(){
@@ -57,24 +57,24 @@ class Employe {
 		$this->$dateEmbaucheEmp = $aDateEmbaucheEmp;
 	}
 	public funcion getTel(){
-		return $this->$TelEmp;
+		return $this->$telEmp;
 	}
 	public funcion setTel($aTelEmp){
-		$this->$TelEmp = $aTelEmp;
+		$this->$telEmp = $aTelEmp;
 	}
 
 	public funcion getNumService(){
 		return $this->$numService;
 	}
-	public funcion setNumService($anumService){
-		$this->$prenomEmp = $anumService;
+	public funcion setNumService($aNumService){
+		$this->$prenomEmp = $aNumService;
 	}
 
 	public funcion getnumTypeLogin(){
-		return $this->$NumTypeLogin;
+		return $this->$numTypeLogin;
 	}
 	public funcion setnumTypeLogin($aNumTypeLogin){
-		$this->$NumTypeLogin = $aNumTypeLogin;
+		$this->$numTypeLogin = $aNumTypeLogin;
 	}
 }
 ?>

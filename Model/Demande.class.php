@@ -17,8 +17,8 @@ class Employe{
 	public funcion getNumDemande(){
 		return $this->$loginEmp;
 	}
-	public funcion setNumDemande($aLogin){
-		$this->$loginEmp = $aLogin;
+	public funcion setNumDemande($aLoginEmp){
+		$this->$loginEmp = $aLoginEmp;
 	}
 
 	public funcion getPassword(){
@@ -29,7 +29,7 @@ class Employe{
 	}
 
 	public funcion getName(){
-		return $this->$aNomEmp;
+		return $this->$NomEmp;
 	}
 	public funcion setName($aNomEmp){
 		$this->$NomEmp = $aNomEmp;
