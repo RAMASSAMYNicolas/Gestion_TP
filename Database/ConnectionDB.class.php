@@ -11,6 +11,8 @@ public class ConnectionDB{
 		$conn=mysqli_connect($this->$HOST,$this->HOSTNAME,$this->$PASSWORD,$this->$DBNAME);
 	}
 
-	public fonction getConn() {}
+	public fonction getConn(){
+		return $this->$conn;
+	}
 
 ?>
