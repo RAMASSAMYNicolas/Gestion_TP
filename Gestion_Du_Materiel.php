@@ -1,4 +1,7 @@
-<HTML><HEAD><BODY>
+<HTML>
+	<HEAD>
+	</HEAD>
+		<BODY>
 <?php
 $con=mysqli_connect("localhost","root","","SIOA_TP_PRJ1");
 if (!$con) {
@@ -27,6 +30,7 @@ echo 'Connexion Etablie'
 	//$req="SELECT loginEmp, passwordEmp FROM employe WHERE loginEMP=".$_POST['login']."";
 	//$ligne=mysqli_fetch_array($req);
 ?>
+				
 				<p>Details du Produit</p>
 				<p>Nom du Materiel : <input type="text" name="nomModeleMat"></p>
 				<p>Caractéristiques du Materiel : </p><textarea input type="text" name="caracteristiquesMat" rows=5 cols=40></textarea>
@@ -35,13 +39,13 @@ echo 'Connexion Etablie'
 					<p><ul>Type de Matériel : 	
 					<SELECT>
 						<OPTION> </OPTION>
-						<?php 	
-							$req="SELECT numTypeMat, nomTypeMat FROM type_mat";
-							$result = $con->query($query);
-							foreach(mysqli_fetch_array($result) as $ligne)
+						<?php 
+							$req = "SELECT numTypeMat, nomTypeMat FROM type_mat";
+							$result = $con->query($req);
+							while($ligne = mysqli_fetch_array($result))
 							{ 
 						?>			
-							<OPTION <?php echo $ligne['numTypeMat'].'. '.$ligne['nomTypeMat'];?>> </OPTION>
+							<OPTION value="<?php echo $ligne['numTypeMat'].$ligne['nomTypeMat']; ?>"> <?php echo $ligne['numTypeMat'].'. '.$ligne['nomTypeMat']; ?> </OPTION>
 						<?php	
 							} 						
 						?>			
@@ -50,25 +54,32 @@ echo 'Connexion Etablie'
 					<p><ul>Marque : 
 					<SELECT>	
 						<OPTION> </OPTION>
-						<OPTION>1. Lenovo </OPTION>
-						<OPTION>2. Dell </OPTION>
-						<OPTION>3. Hewtlett-Packard </OPTION>
-						<OPTION>4. Lexmark </OPTION>
-						<OPTION>5. Canon </OPTION>
-						<OPTION>6. Epson </OPTION>
-						<OPTION>7. Cisco </OPTION>
-						<OPTION>8. Netgear </OPTION>
+						<?php 
+							$req = "SELECT numMarque, nomMarque FROM marque";
+							$result = $con->query($req);
+							while($ligne = mysqli_fetch_array($result))
+							{ 
+						?>			
+							<OPTION value="<?php echo $ligne['numMarque'].$ligne['nomMarque']; ?>"> <?php echo $ligne['numMarque'].'. '.$ligne['nomMarque']; ?> </OPTION>
+						<?php	
+							} 						
+						?>
 					</SELECT></ul></p>
 					<p><ul>Login : 
-					<SELECT>	
+					<SELECT>
 						<OPTION> </OPTION>
-						<OPTION>Login1</OPTION>
-						<OPTION>Login2</OPTION>
-						<OPTION>Login3</OPTION>											
+						<?php 
+							$req = "SELECT loginEmp FROM employe";
+							$result = $con->query($req);
+							while($ligne = mysqli_fetch_array($result))
+							{ 
+						?>			
+							<OPTION value="<?php echo $ligne['loginEmp']; ?>"> <?php echo $ligne['loginEmp']; ?> </OPTION>
+						<?php	
+							} 						
+						?>											
 					</SELECT></ul></p>
-				
-				
-				
 			</form>
-		
-</BODY></HEAD></HTML>
+			
+		</BODY>
+</HTML>
