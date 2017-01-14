@@ -6,7 +6,7 @@ class Employe{
 	private $nomEmp;
 	private $prenomEmp;
 
-	funcion __construct($aLoginEmp, $aPasswordEmp, $aNomEmp, $aPrenomEmp, $aDateEmbaucheEmp, $aTelEmp, $aNumService, $aNumTypeLogin){
+	funcion __construct($aLoginEmp, $aPasswordEmp, $aNomEmp, $aPrenomEmp){
 
 		$this->$numDemande       = $aLoginEmp;
 		$this->$passwordEmp      = $aPasswordEmp;
