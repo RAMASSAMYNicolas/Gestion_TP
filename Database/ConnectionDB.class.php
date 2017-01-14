@@ -8,8 +8,9 @@ public class ConnectionDB{
 	private $conn;
 
 	fonction __construct() {
-		$this->$conn=mysqli_connect($this->$HOST,$this->HOSTNAME,$this->$PASSWORD,$this->$DBNAME);
+		$conn=mysqli_connect($this->$HOST,$this->HOSTNAME,$this->$PASSWORD,$this->$DBNAME);
 	}
 
+	public fonction getConn() {}
 
 ?>
