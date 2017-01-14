@@ -22,5 +22,13 @@ class Employe{
 		$this->$numTypeLogin     = $aNumTypeLogin;
 
 	}
+
+	public funcion getLogin(){
+		return $this->$loginEmp;
+	}
+
+	public funcion setLogin($aLogin){
+		$this->$loginEmp = $aLogin;
+	}
 }
 ?>
