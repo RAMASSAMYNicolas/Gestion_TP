@@ -10,7 +10,7 @@ class Employe {
 	private $numService;
 	private $numTypeLogin;
 
-	funcion __construct($aLoginEmp, $aPasswordEmp, $aNomEmp, $aPrenomEmp, $aDateEmbaucheEmp, $aTelEmp, $aNumService, $aNumTypeLogin){
+	function __construct($aLoginEmp, $aPasswordEmp, $aNomEmp, $aPrenomEmp, $aDateEmbaucheEmp, $aTelEmp, $aNumService, $aNumTypeLogin){
 
 		$this->$loginEmp         = $aLoginEmp;
 		$this->$passwordEmp      = $aPasswordEmp;
@@ -22,58 +22,58 @@ class Employe {
 		$this->$numTypeLogin     = $aNumTypeLogin;
 	}
 
-	public funcion getLogin(){
+	public function getLogin(){
 		return $this->$loginEmp;
 	}
-	public funcion setLogin($aLogin){
+	public function setLogin($aLogin){
 		$this->$loginEmp = $aLogin;
 	}
 
-	public funcion getPassword(){
+	public function getPassword(){
 		return $this->$passwordEmp;
 	}
-	public funcion setPassword($aPasswordEmp){
+	public function setPassword($aPasswordEmp){
 		$this->$passwordEmp = $aPasswordEmp;
 	}
 
-	public funcion getName(){
+	public function getName(){
 		return $this->$nomEmp;
 	}
-	public funcion setName($aNomEmp){
+	public function setName($aNomEmp){
 		$this->$nomEmp = $aNomEmp;
 	}
 
-	public funcion getFirstName(){
+	public function getFirstName(){
 		return $this->$prenomEmp;
 	}
-	public funcion setFirstName($aPrenomEmp){
+	public function setFirstName($aPrenomEmp){
 		$this->$prenomEmp = $aPrenomEmp;
 	}
 
-	public funcion getDateEmbauche(){
+	public function getDateEmbauche(){
 		return $this->$dateEmbaucheEmp;
 	}
-	public funcion setDate($aDateEmbaucheEmp){
+	public function setDate($aDateEmbaucheEmp){
 		$this->$dateEmbaucheEmp = $aDateEmbaucheEmp;
 	}
-	public funcion getTel(){
+	public function getTel(){
 		return $this->$telEmp;
 	}
-	public funcion setTel($aTelEmp){
+	public function setTel($aTelEmp){
 		$this->$telEmp = $aTelEmp;
 	}
 
-	public funcion getNumService(){
+	public function getNumService(){
 		return $this->$numService;
 	}
-	public funcion setNumService($aNumService){
+	public function setNumService($aNumService){
 		$this->$prenomEmp = $aNumService;
 	}
 
-	public funcion getnumTypeLogin(){
+	public function getnumTypeLogin(){
 		return $this->$numTypeLogin;
 	}
-	public funcion setnumTypeLogin($aNumTypeLogin){
+	public function setnumTypeLogin($aNumTypeLogin){
 		$this->$numTypeLogin = $aNumTypeLogin;
 	}
 }

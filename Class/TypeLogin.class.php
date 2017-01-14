@@ -5,7 +5,7 @@ class TypeLogin{
 	private $nomTypeLogin;
 
 
-	funcion __construct($aNumTypeLogin, $aNomTypeLogin){
+	function __construct($aNumTypeLogin, $aNomTypeLogin){
 
 		$this->$numTypeLogin  = $aNumTypeLogin;
 		$this->$nomTypeLogin  = $aNomTypeLogin;
@@ -13,19 +13,19 @@ class TypeLogin{
 
 	}
 
-	public funcion getNumTypeLogin(){
+	public function getNumTypeLogin(){
 		return $this->$numTypeLogin;
 	}
 
-	public funcion setNumTypeLogin($aNumTypeLogin){
+	public function setNumTypeLogin($aNumTypeLogin){
 		$this->$numTypeLogin = $aNumTypeLogin;
 	}
 
-	public funcion getNomTypeLogin(){
+	public function getNomTypeLogin(){
 		return $this->$nomTypeLogin;
 	}
 
-	public funcion setNomTypeLogin($aNomTypeLogin){
+	public function setNomTypeLogin($aNomTypeLogin){
 		$this->$nomTypeLogin = $aNomTypeLogin;
 	}
 }

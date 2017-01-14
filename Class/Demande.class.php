@@ -6,7 +6,7 @@ class Employe{
 	private $nomEmp;
 	private $prenomEmp;
 
-	funcion __construct($aLoginEmp, $aPasswordEmp, $aNomEmp, $aPrenomEmp){
+	function __construct($aLoginEmp, $aPasswordEmp, $aNomEmp, $aPrenomEmp){
 
 		$this->$numDemande       = $aLoginEmp;
 		$this->$passwordEmp      = $aPasswordEmp;
@@ -14,31 +14,31 @@ class Employe{
 		$this->$prenomEmp        = $aPrenomEmp;
 	}
 
-	public funcion getNumDemande(){
+	public function getNumDemande(){
 		return $this->$loginEmp;
 	}
-	public funcion setNumDemande($aLoginEmp){
+	public function setNumDemande($aLoginEmp){
 		$this->$loginEmp = $aLoginEmp;
 	}
 
-	public funcion getPassword(){
+	public function getPassword(){
 		return $this->$passwordEmp;
 	}
-	public funcion setPassword($aPasswordEmp){
+	public function setPassword($aPasswordEmp){
 		$this->$passwordEmp = $aPasswordEmp;
 	}
 
-	public funcion getName(){
+	public function getName(){
 		return $this->$NomEmp;
 	}
-	public funcion setName($aNomEmp){
+	public function setName($aNomEmp){
 		$this->$NomEmp = $aNomEmp;
 	}
 
-	public funcion getFirstName(){
+	public function getFirstName(){
 		return $this->$prenomEmp;
 	}
-	public funcion setFirstName($aPrenomEmp){
+	public function setFirstName($aPrenomEmp){
 		$this->$prenomEmp = $aPrenomEmp;
 	}
 }

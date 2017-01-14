@@ -10,27 +10,13 @@ if (!$con) {
 echo 'Connexion Etablie'
 ?>
 			<!--
-			Modifiable et incrementable aux tables
-			nomModeleMat			= Nom du Materiel
-			caracteristiquesMat		= Caractéristiques
-			dateAchat				= Date d'achat
-
-			Non modifiable
-			loginEmp				= Identifiants de l'employer
-			numTypeMat				= Catégorie
-			numMarque				= Numero de Marque
 			
-			<form name="gestion_materiel" method="POST">
 				<p>Identifiants</p>
 				<p>Login : <input type="text" name="login"></p>
 				<p>Mot de Passe : <input type="text" name="mdp"></p><br>
 			-->	
-				
-<?php
-	//$req="SELECT loginEmp, passwordEmp FROM employe WHERE loginEMP=".$_POST['login']."";
-	//$ligne=mysqli_fetch_array($req);
-?>
-				
+			
+			<form name="gestion_materiel" method="POST">
 				<p>Details du Produit</p>
 				<p>Nom du Materiel : <input type="text" name="nomModeleMat"></p>
 				<p>Caractéristiques du Materiel : </p><textarea input type="text" name="caracteristiquesMat" rows=5 cols=40></textarea>

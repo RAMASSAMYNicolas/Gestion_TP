@@ -9,7 +9,7 @@ class Materiel {
 	private $numTypeMat;
 	private $numMarqueMat;
 
-	funcion __construct($aRefMat, $aNomModeleMat, $aCaracteristiquesMat, $aDateAchatMat, $aLoginEmp, $aNumTypeMat, $aNumMarqueMat){
+	function __construct($aRefMat, $aNomModeleMat, $aCaracteristiquesMat, $aDateAchatMat, $aLoginEmp, $aNumTypeMat, $aNumMarqueMat){
 
 		$this->$refMat         				= $aRefMat;
 		$this->$nomModeleMat    			= $aNomModeleMat;
@@ -20,51 +20,51 @@ class Materiel {
 		$this->$numMarqueMat     			= $aNumMarqueMat;
 	}
 
-	public funcion getRefMat(){
-		return $this->$loginEmp;
+	public function getRefMat(){
+		return $this->$refMat;
 	}
-	public funcion setRefMat($aRefMat){
+	public function setRefMat($aRefMat){
 		$this->$refMat = $aRefMat;
 	}
 
-	public funcion getModel(){
+	public function getModel(){
 		return $this->$nomModeleMat;
 	}
-	public funcion setModel($aNomModeleMat){
+	public function setModel($aNomModeleMat){
 		$this->$nomModeleMat = $aNomModeleMat;
 	}
 
-	public funcion getCaracteristiques(){
+	public function getCaracteristiques(){
 		return $this->$caracteristiquesMat;
 	}
-	public funcion setName($aCaracteristiquesMat){
+	public function setName($aCaracteristiquesMat){
 		$this->$caracteristiquesMat = $aCaracteristiquesMat;
 	}
 
-	public funcion getDateAchat(){
+	public function getDateAchat(){
 		return $this->$dateAchatMat;
 	}
-	public funcion setDateAchat($aDateAchatMat){
+	public function setDateAchat($aDateAchatMat){
 		$this->$dateAchatMat = $aDateAchatMat;
 	}
 
-	public funcion getLogin(){
+	public function getLogin(){
 		return $this->$loginEmp;
 	}
-	public funcion setLogin($aLoginEmp){
+	public function setLogin($aLoginEmp){
 		$this->$loginEmp = $aLoginEmp;
 	}
-	public funcion getNumTypeMat(){
+	public function getNumTypeMat(){
 		return $this->$numTypeMat;
 	}
-	public funcion setNumTypeMat($aNumTypeMat){
+	public function setNumTypeMat($aNumTypeMat){
 		$this->$numTypeMat = $aNumTypeMat;
 	}
 
-	public funcion getNumMarqueMat(){
+	public function getNumMarqueMat(){
 		return $this->$numMarqueMat;
 	}
-	public funcion setNumMarqueMat($aNumMarqueMat){
+	public function setNumMarqueMat($aNumMarqueMat){
 		$this->$numMarqueMat = $aNumMarqueMat;
 	}
 }

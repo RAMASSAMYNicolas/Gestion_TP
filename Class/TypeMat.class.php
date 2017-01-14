@@ -4,23 +4,23 @@ class Service{
 	private $numTypeMat;
 	private $nomTypeMat;
 
-	funcion __construct($aNumTypeMat, $aNomTypeMat){
+	function __construct($aNumTypeMat, $aNomTypeMat){
 
 		$this->$numTypeMat       = $aNumTypeMat;
 		$this->$nomTypeMat       = $aNomTypeMat;
 	}
 
-	public funcion getNumTypeMat(){
+	public function getNumTypeMat(){
 		return $this->$numTypeMat;
 	}
-	public funcion setNumTypeMat($aNumTypeMat){
+	public function setNumTypeMat($aNumTypeMat){
 		$this->$numTypeMat = $aNumTypeMat;
 	}
 
-	public funcion getNomTypeMaT(){
+	public function getNomTypeMaT(){
 		return $this->$nomTypeMat;
 	}
-	public funcion setNomTypeMaT($aNomTypeMat){
+	public function setNomTypeMaT($aNomTypeMat){
 		$this->$nomTypeMat = $aNomTypeMat;
 	}
 }

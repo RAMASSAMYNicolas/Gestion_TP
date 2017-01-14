@@ -7,11 +7,11 @@ public class ConnectionDB{
 	private $DBNAME = "SIOA_TP_PRJ1";
 	private $conn;
 
-	fonction __construct() {
+	function __construct() {
 		$conn=mysqli_connect($this->$HOST,$this->HOSTNAME,$this->$PASSWORD,$this->$DBNAME);
 	}
 
-	public fonction getConn(){
+	public function getConn(){
 		return $this->$conn;
 	}
 

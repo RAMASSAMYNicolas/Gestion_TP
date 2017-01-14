@@ -5,7 +5,7 @@ class Marque{
 	private $nomMarque;
 
 
-	funcion __construct($aNumMarque, $aNomMarque){
+	function __construct($aNumMarque, $aNomMarque){
 
 		$this->$numMarque  = $aNumMarque;
 		$this->$nomMarque  = $aNomMarque;
@@ -13,19 +13,19 @@ class Marque{
 
 	}
 
-	public funcion getNumMarque(){
+	public function getNumMarque(){
 		return $this->$numMarque;
 	}
 
-	public funcion setNumMarque($aNumMarque){
+	public function setNumMarque($aNumMarque){
 		$this->$numMarque = $aNumMarque;
 	}
 
-	public funcion getNomMarque(){
+	public function getNomMarque(){
 		return $this->$nomMarque;
 	}
 
-	public funcion setNomMarque($aNomMarque){
+	public function setNomMarque($aNomMarque){
 		$this->$nomMarque = $aNomMarque;
 	}
 }

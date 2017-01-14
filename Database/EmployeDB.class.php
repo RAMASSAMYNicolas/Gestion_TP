@@ -4,15 +4,10 @@
 	function getAllEmploye(){
 
 		$listEmploye = array();
-
 		$con = new ConnectionDB().getCon();
-
 		$req = "SELECT * FROM empoloye";
-
 		$result = $con->query($req);
-
-		while($e = mysqli_fetch_array($result)){
-
+		while($e = mysqli_fetch_array($result)) {
 			$emp = new Employe(
 								$e['loginEmp'], 
 								$e['passwordEmp'], 
@@ -23,12 +18,10 @@
 								$e['numService'], 
 								$e['numTypeLogin']
 							);
-
 			$listEmploye->add($emp);
 		}
 
-		return $listEmploye
-
+		return $listEmploye;
 	}
 	
 }

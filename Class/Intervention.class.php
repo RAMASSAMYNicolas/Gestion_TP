@@ -6,7 +6,7 @@ class Intervention{
 	private $descriptionIntervention;
 	private $numDemande;
 
-	funcion __construct($aNumIntervention, $aDateIntervention, $aDescriptionIntervention , $aNumDemande){
+	function __construct($aNumIntervention, $aDateIntervention, $aDescriptionIntervention , $aNumDemande){
 
 		$this->$numIntervention          = $aNumIntervention;
 		$this->$dateIntervention         = $aDateIntervention;
@@ -15,35 +15,35 @@ class Intervention{
 		
 	}
 
-	public funcion getNumIntervention(){
+	public function getNumIntervention(){
 		return $this->$numIntervention;
 	}
 
-	public funcion setNumIntervention($aNumIntervention){
+	public function setNumIntervention($aNumIntervention){
 		$this->$numIntervention = $aNumIntervention;
 	}
 
-	public funcion getDateIntervention(){
+	public function getDateIntervention(){
 		return $this->$dateIntervention;
 	}
 
-	public funcion setDateIntervention($aDateIntervention){
+	public function setDateIntervention($aDateIntervention){
 		$this->$dateIntervention = $aDateIntervention;
 	}
 
-	public funcion getDescriptionIntervention(){
+	public function getDescriptionIntervention(){
 		return $this->$descriptionIntervention;
 	}
 
-	public funcion setDescriptionIntervention($aDescriptionIntervention){
+	public function setDescriptionIntervention($aDescriptionIntervention){
 		$this->$descriptionIntervention = $aDescriptionIntervention;
 	}
 
-	public funcion getNumDemande(){
+	public function getNumDemande(){
 		return $this->$numDemande;
 	}
 
-	public funcion setNumDemande($aNumDemande){
+	public function setNumDemande($aNumDemande){
 		$this->$numDemande = $aNumDemande;
 	}
 
