@@ -1,4 +1,11 @@
-<?php echo 'Page index'; ?>
+<?php 
+
+require_once('config.php');
+
+echo 'Page index'; 
+
+
+?>
 
 <HTML>
 	<HEAD>
