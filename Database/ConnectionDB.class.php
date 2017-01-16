@@ -1,6 +1,5 @@
-<?php
-
-public class ConnectionDB{
+<?php 
+class ConnectionDB{
 	private $HOST = "localhost";
 	private $HOSTNAME ="root";
 	private $PASSWORD = "";
@@ -14,5 +13,5 @@ public class ConnectionDB{
 	public function getConn(){
 		return $this->$conn;
 	}
-
+}
 ?>

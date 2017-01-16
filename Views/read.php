@@ -21,7 +21,8 @@
 				<th align="left" valign="middle" colspan=3>Edition  :				</th>
 			</thead>
 			<tbody>
-				<?php include 'MaterielDB.class.php';
+				<?php include '../Gestion_TP/Database/MaterielDB.class.php';
+					$con = new MaterielDB().getAllMateriel();
                 	echo '<td>' . "" . '</td>';
                 	echo '<td>' . "" . '</td>';
                 	echo '<td>' . "" . '</td>';
