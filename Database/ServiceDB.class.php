@@ -1,7 +1,7 @@
 <?php class ServiceDB{
 
 
-	function getAstService(){
+	function getAllService(){
 
 		$listService = array();
 		$con = new ConnectionDB().getCon();

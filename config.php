@@ -1,5 +1,5 @@
 <?php
-phpinfo();
+
 require_once('Database/ConnectionDB.class.php');
 require_once('Database/EmployeDB.class.php'); 
 require_once('Model/Demande.class.php'); 
