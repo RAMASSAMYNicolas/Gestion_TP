@@ -19,7 +19,7 @@
 								$e['numService'], 
 								$e['numTypeLogin']
 							);
-			$listEmploye->add($emp);
+			array_push($listEmploye, $emp);
 		}
 
 		return $listEmploye;

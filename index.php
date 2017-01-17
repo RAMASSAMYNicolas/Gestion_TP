@@ -1,9 +1,12 @@
 <?php 
 require_once('config.php');
-echo 'Page index'; 
+echo 'Page index \n'; 
 $listEmploye = EmployeDB::getAllEmploye();
+var_dump($listEmploye);
     foreach ($listEmploye as $employe) {
-        $employe->getLogin();
+         $employe->getLogin();
+         echo $i;
+         $i++;
     }
 ?>
 

@@ -12,7 +12,7 @@
 								$e['numMarque'], 
 								$e['nomMarque']
 							);
-			$listMarque->add($emp);
+			array_push($listMarque, $emp);
 		}
 
 		return $listMarque;

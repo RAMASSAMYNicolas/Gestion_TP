@@ -12,35 +12,35 @@ class Employe {
 
 	function __construct($aLoginEmp, $aPasswordEmp, $aNomEmp, $aPrenomEmp, $aDateEmbaucheEmp, $aTelEmp, $aNumService, $aNumTypeLogin){
 
-		$this->$loginEmp         = $aLoginEmp;
-		$this->$passwordEmp      = $aPasswordEmp;
-		$this->$nomEmp           = $aNomEmp;
-		$this->$prenomEmp        = $aPrenomEmp;
-		$this->$dateEmbaucheEmp  = $aDateEmbaucheEmp;
-		$this->$telEmp           = $aTelEmp;
-		$this->$numService       = $aNumService;
-		$this->$numTypeLogin     = $aNumTypeLogin;
+		$this->loginEmp         = $aLoginEmp;
+		$this->passwordEmp      = $aPasswordEmp;
+		$this->nomEmp           = $aNomEmp;
+		$this->prenomEmp        = $aPrenomEmp;
+		$this->dateEmbaucheEmp  = $aDateEmbaucheEmp;
+		$this->telEmp           = $aTelEmp;
+		$this->numService       = $aNumService;
+		$this->numTypeLogin     = $aNumTypeLogin;
 	}
 
 	public function getLogin(){
-		return $this->$loginEmp;
+		return $this->loginEmp;
 	}
 	public function setLogin($aLogin){
-		$this->$loginEmp = $aLogin;
+		$this->loginEmp = $aLogin;
 	}
 
 	public function getPassword(){
-		return $this->$passwordEmp;
+		return $this->passwordEmp;
 	}
 	public function setPassword($aPasswordEmp){
-		$this->$passwordEmp = $aPasswordEmp;
+		$this->passwordEmp = $aPasswordEmp;
 	}
 
 	public function getName(){
-		return $this->$nomEmp;
+		return $this->nomEmp;
 	}
 	public function setName($aNomEmp){
-		$this->$nomEmp = $aNomEmp;
+		$this->nomEmp = $aNomEmp;
 	}
 
 	public function getFirstName(){

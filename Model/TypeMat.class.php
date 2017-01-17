@@ -6,22 +6,22 @@ class TypeMat{
 
 	function __construct($aNumTypeMat, $aNomTypeMat){
 
-		$this->$numTypeMat       = $aNumTypeMat;
-		$this->$nomTypeMat       = $aNomTypeMat;
+		$this->numTypeMat       = $aNumTypeMat;
+		$this->nomTypeMat       = $aNomTypeMat;
 	}
 
 	public function getNumTypeMat(){
-		return $this->$numTypeMat;
+		return $this->numTypeMat;
 	}
 	public function setNumTypeMat($aNumTypeMat){
-		$this->$numTypeMat = $aNumTypeMat;
+		$this->numTypeMat = $aNumTypeMat;
 	}
 
 	public function getNomTypeMat(){
-		return $this->$nomTypeMat;
+		return $this->nomTypeMat;
 	}
 	public function setNomTypeMat($aNomTypeMat){
-		$this->$nomTypeMat = $aNomTypeMat;
+		$this->nomTypeMat = $aNomTypeMat;
 	}
 }
 ?>

@@ -12,7 +12,7 @@
 								$e['numTypeLogin'], 
 								$e['nomTypeLogin']					
 							);
-			$listTypeLogin->add($emp);
+			array_push($listTypeLogin, $emp);
 		}
 
 		return $listTypeLogin

@@ -14,19 +14,19 @@ class TypeLogin{
 	}
 
 	public function getNumTypeLogin(){
-		return $this->$numTypeLogin;
+		return $this->numTypeLogin;
 	}
 
 	public function setNumTypeLogin($aNumTypeLogin){
-		$this->$numTypeLogin = $aNumTypeLogin;
+		$this->numTypeLogin = $aNumTypeLogin;
 	}
 
 	public function getNomTypeLogin(){
-		return $this->$nomTypeLogin;
+		return $this->nomTypeLogin;
 	}
 
 	public function setNomTypeLogin($aNomTypeLogin){
-		$this->$nomTypeLogin = $aNomTypeLogin;
+		$this->nomTypeLogin = $aNomTypeLogin;
 	}
 }
 ?>

@@ -17,7 +17,7 @@
 								$e['numTypeMat'], 
 								$e['numMarque']						
 							);
-			$listMateriel->add($emp);
+			array_push($listMateriel, $emp);
 		}
 
 		return $listMateriel

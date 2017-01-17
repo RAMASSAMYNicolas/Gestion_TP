@@ -12,7 +12,7 @@
 								$e['numTypeMatt'], 
 								$e['nomTypeMat']					
 							);
-			$listTypeMat->add($emp);
+			array_push($listTypeMat, $emp);
 		}
 
 		return $listTypeMat

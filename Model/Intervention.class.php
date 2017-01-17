@@ -8,39 +8,39 @@ class Intervention{
 
 	function __construct($aNumIntervention, $aDateIntervention, $aDescriptionIntervention , $aNumDemande){
 
-		$this->$numIntervention          = $aNumIntervention;
-		$this->$dateIntervention         = $aDateIntervention;
-		$this->$descriptionIntervention  = $aDescriptionIntervention;
-		$this->$numDemande               = $aNumDemande;
+		$this->numIntervention          = $aNumIntervention;
+		$this->dateIntervention         = $aDateIntervention;
+		$this->descriptionIntervention  = $aDescriptionIntervention;
+		$this->numDemande               = $aNumDemande;
 		
 	}
 
 	public function getNumIntervention(){
-		return $this->$numIntervention;
+		return $this->numIntervention;
 	}
 
 	public function setNumIntervention($aNumIntervention){
-		$this->$numIntervention = $aNumIntervention;
+		$this->numIntervention = $aNumIntervention;
 	}
 
 	public function getDateIntervention(){
-		return $this->$dateIntervention;
+		return $this->dateIntervention;
 	}
 
 	public function setDateIntervention($aDateIntervention){
-		$this->$dateIntervention = $aDateIntervention;
+		$this->dateIntervention = $aDateIntervention;
 	}
 
 	public function getDescriptionIntervention(){
-		return $this->$descriptionIntervention;
+		return $this->descriptionIntervention;
 	}
 
 	public function setDescriptionIntervention($aDescriptionIntervention){
-		$this->$descriptionIntervention = $aDescriptionIntervention;
+		$this->descriptionIntervention = $aDescriptionIntervention;
 	}
 
 	public function getNumDemande(){
-		return $this->$numDemande;
+		return $this->numDemande;
 	}
 
 	public function setNumDemande($aNumDemande){

@@ -12,7 +12,7 @@
 								$e['numService'], 
 								$e['nomService']						
 							);
-			$listService->add($emp);
+			array_push($listService, $emp);
 		}
 
 		return $listService
