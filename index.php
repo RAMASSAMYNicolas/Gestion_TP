@@ -1,6 +1,10 @@
 <?php 
 require_once('config.php');
 echo 'Page index'; 
+$listEmploye = EmployeDB::getAllEmploye();
+    foreach ($listEmploye as $employe) {
+        $employe->getLogin();
+    }
 ?>
 
 <HTML>
