@@ -7,11 +7,11 @@ class ConnectionDB{
 	private $conn;
 
 	function __construct() {
-		$conn=mysqli_connect($this->$HOST,$this->HOSTNAME,$this->$PASSWORD,$this->$DBNAME);
+		$this->conn=mysqli_connect($this->HOST,$this->HOSTNAME,$this->PASSWORD,$this->DBNAME);
 	}
 
-	public function getConn(){
-		return $this->$conn;
+	public function getCon(){
+		return $this->conn;
 	}
 }
 ?>
