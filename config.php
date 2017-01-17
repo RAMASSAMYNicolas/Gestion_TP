@@ -1,7 +1,8 @@
 <?php
 
 require_once('Database/ConnectionDB.class.php');
-require_once('Database/EmployeDB.class.php'); 
+require_once('Database/EmployeDB.class.php');
+require_once('Database/MarqueDB.class.php'); 
 require_once('Model/Demande.class.php'); 
 require_once('Model/Employe.class.php');  
 require_once('Model/Marque.class.php');

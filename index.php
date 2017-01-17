@@ -1,13 +1,7 @@
 <?php 
 require_once('config.php');
 echo 'Page index \n'; 
-$listEmploye = EmployeDB::getAllEmploye();
-var_dump($listEmploye);
-    foreach ($listEmploye as $employe) {
-         $employe->getLogin();
-         echo $i;
-         $i++;
-    }
+$listMarque = MarqueDB::getAllMarque();
 ?>
 
 <HTML>
@@ -39,9 +33,10 @@ var_dump($listEmploye);
 						</td>
 						<td  valign="middle">
 							<SELECT>
-								<OPTION>
-									
-								</OPTION>
+								<OPTION></OPTION>
+								<?php foreach ($listMarque as $marque) { ?>
+								<OPTION value="<?php echo $marque->getNumMarque(); ?>"><?php echo $marque->getNomMarque(); ?></OPTION>
+								<?php } ?>
 							</SELECT>
 						</td>
 						<td  valign="middle">

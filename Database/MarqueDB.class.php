@@ -4,7 +4,8 @@
 	function getAllMarque(){
 
 		$listMarque = array();
-		$con = new ConnectionDB().getCon();
+		$connectionDB = new ConnectionDB();
+		$con = $connectionDB->getCon();
 		$req = "SELECT * FROM marque";
 		$result = $con->query($req);
 		while($e = mysqli_fetch_array($result)) {
