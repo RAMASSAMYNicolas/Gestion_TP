@@ -1,5 +1,6 @@
 <?php
 
+mb_internal_encoding("UTF-8");
 require_once('Database/ConnectionDB.class.php');
 //require_once('Database/DemandeDB.class.php');
 require_once('Database/EmployeDB.class.php');
@@ -15,6 +16,5 @@ require_once('Model/Materiel.class.php');
 require_once('Model/Service.class.php'); 
 require_once('Model/TypeLogin.class.php'); 
 require_once('Model/TypeMat.class.php'); 
-
 
 ?>

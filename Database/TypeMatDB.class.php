@@ -10,7 +10,7 @@
 		$result = $con->query($req);
 		while($e = mysqli_fetch_array($result)) {
 			$emp = new TypeMat(
-								$e['numTypeMatt'], 
+								$e['numTypeMat'], 
 								$e['nomTypeMat']					
 							);
 			array_push($listTypeMat, $emp);
