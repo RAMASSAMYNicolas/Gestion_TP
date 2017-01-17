@@ -4,7 +4,8 @@
 	function getAllService(){
 
 		$listService = array();
-		$con = new ConnectionDB().getCon();
+		$connectionDB = new ConnectionDB();
+		$con = $connectionDB->getCon();
 		$req = "SELECT * FROM service";
 		$result = $con->query($req);
 		while($e = mysqli_fetch_array($result)) {

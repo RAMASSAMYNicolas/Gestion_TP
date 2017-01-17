@@ -4,7 +4,8 @@
 	function getAllTypeMat(){
 
 		$listTypeMat = array();
-		$con = new ConnectionDB().getCon();
+		$connectionDB = new ConnectionDB();
+		$con = $connectionDB->getCon();
 		$req = "SELECT * FROM type_mat";
 		$result = $con->query($req);
 		while($e = mysqli_fetch_array($result)) {
