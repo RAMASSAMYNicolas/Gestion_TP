@@ -17,10 +17,10 @@ class TypeMat{
 		$this->$numTypeMat = $aNumTypeMat;
 	}
 
-	public function getNomTypeMaT(){
+	public function getNomTypeMat(){
 		return $this->$nomTypeMat;
 	}
-	public function setNomTypeMaT($aNomTypeMat){
+	public function setNomTypeMat($aNomTypeMat){
 		$this->$nomTypeMat = $aNomTypeMat;
 	}
 }

@@ -1,10 +1,6 @@
 <?php 
-
 require_once('config.php');
-
 echo 'Page index'; 
-
-
 ?>
 
 <HTML>
@@ -27,9 +23,9 @@ echo 'Page index';
 						<th align="left" valign="middle">Login  :				</th>
 					</tr>
 					<tr>
-						<td  valign="middle">
+						<td  valign="middle" >
 							<SELECT>
-								<OPTION>
+								<OPTION >
 									
 								</OPTION>
 							</SELECT>
@@ -53,6 +49,5 @@ echo 'Page index';
 			</p>
 			<input type="submit" name="add" value="Ajouter un Matériel">
 		</form>
-
 	</BODY>
 </HTML>
