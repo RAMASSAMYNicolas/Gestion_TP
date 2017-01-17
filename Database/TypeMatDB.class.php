@@ -16,7 +16,7 @@
 			array_push($listTypeMat, $emp);
 		}
 
-		return $listTypeMat
+		return $listTypeMat;
 	}
 	
 }

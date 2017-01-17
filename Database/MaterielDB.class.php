@@ -21,7 +21,7 @@
 			array_push($listMateriel, $emp);
 		}
 
-		return $listMateriel
+		return $listMateriel;
 	}
 	
 }

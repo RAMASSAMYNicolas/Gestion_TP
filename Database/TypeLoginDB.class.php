@@ -16,7 +16,7 @@
 			array_push($listTypeLogin, $emp);
 		}
 
-		return $listTypeLogin
+		return $listTypeLogin;
 	}
 	
 }

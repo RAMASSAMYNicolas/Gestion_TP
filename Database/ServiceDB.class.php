@@ -16,7 +16,7 @@
 			array_push($listService, $emp);
 		}
 
-		return $listService
+		return $listService;
 	}
 	
 }
