@@ -29,9 +29,10 @@ $listMateriel 	= MaterielDB::getAllMateriel();
 	           				'<td>' . $materiel->getNumMarqueMat()		. '</td>'.
 	           				'<td>' . $materiel->getNumTypeMat()			. '</td>'.
 	           				'<td>' . $materiel->getLogin()				. '</td>'.
-	           				'<td>' . '<input type="submit" name="read" value="Read">'		. '</td>' .
-	           				'<td>' . '<input type="submit" name="modifiy" value="Modify">'	. '</td>' .
-	           				'<td>' . '<input type="submit" name="delete" value="Delete">'	. '</td>';
+	           				'<td>' . '<input type="submit" name="read" value="Read"/>'		. '</td>' .
+	           				'<td>' . '<input type="submit" name="modifiy" value="Modify"/>'	. '</td>' .
+	           				'<td>' . '<input type="submit" name="delete" value="Delete"/>'	. '</td>'.
+	           				'<td>' . '<button><a href="'.$materiel->getRefMat().'">DELETE '.$materiel->getRefMat().'</a></button>'.'</td>' ;
 	           				if(isset($_POST['delete'])){ 
 	           					$connectionDB = new ConnectionDB();
 								$con = $connectionDB->getCon();
