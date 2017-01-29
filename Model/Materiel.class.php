@@ -12,9 +12,9 @@ class Materiel {
 	function __construct($aRefMat, $aNomModeleMat, $aCaracteristiquesMat, $aDateAchatMat, $aLoginEmp, $aNumTypeMat, $aNumMarqueMat){
 
 		$this->refMat         				= $aRefMat;
-		$this->nomModeleMat    			= $aNomModeleMat;
-		$this->caracteristiquesMat         = $aCaracteristiquesMat;
-		$this->dateAchatMat		        = $aDateAchatMat;
+		$this->nomModeleMat    				= $aNomModeleMat;
+		$this->caracteristiquesMat          = $aCaracteristiquesMat;
+		$this->dateAchatMat		        	= $aDateAchatMat;
 		$this->loginEmp 					= $aLoginEmp;
 		$this->numTypeMat       			= $aNumTypeMat;
 		$this->numMarqueMat     			= $aNumMarqueMat;
@@ -62,7 +62,7 @@ class Materiel {
 	}
 
 	public function getNumMarqueMat(){
-		return $this->$numMarqueMat;
+		return $this->numMarqueMat;
 	}
 	public function setNumMarqueMat($aNumMarqueMat){
 		$this->$numMarqueMat = $aNumMarqueMat;

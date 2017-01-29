@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `demande` (
   `loginEmp` varchar(30) NOT NULL,
   PRIMARY KEY (`numDemande`),
   KEY `loginEmp` (`loginEmp`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `employe` (
   PRIMARY KEY (`loginEmp`),
   KEY `numService` (`numService`),
   KEY `numTypeLogin` (`numTypeLogin`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 -- --------------------------------------------------------
 
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `intervention` (
   `numDemande` int(6) NOT NULL,
   PRIMARY KEY (`numIntervention`),
   KEY `numDemande` (`numDemande`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `marque` (
   `numMarque` int(2) NOT NULL AUTO_INCREMENT,
   `nomMarque` varchar(20) NOT NULL,
   PRIMARY KEY (`numMarque`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB AUTO_INCREMENT=9 ;
 
 --
 -- Contenu de la table `marque`
@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `materiel` (
   PRIMARY KEY (`refMat`),
   KEY `numTypeMat` (`numTypeMat`),
   KEY `numMarque` (`numMarque`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB;
 
 -- --------------------------------------------------------
 
@@ -125,7 +125,7 @@ CREATE TABLE IF NOT EXISTS `service` (
   `numService` int(2) NOT NULL AUTO_INCREMENT,
   `nomService` varchar(20) NOT NULL,
   PRIMARY KEY (`numService`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  AUTO_INCREMENT=6 ;
 
 --
 -- Contenu de la table `service`
@@ -148,7 +148,7 @@ CREATE TABLE IF NOT EXISTS `type_login` (
   `numTypeLogin` int(2) NOT NULL AUTO_INCREMENT,
   `nomTypeLogin` varchar(20) NOT NULL,
   PRIMARY KEY (`numTypeLogin`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  AUTO_INCREMENT=4 ;
 
 --
 -- Contenu de la table `type_login`
@@ -169,7 +169,7 @@ CREATE TABLE IF NOT EXISTS `type_mat` (
   `numTypeMat` int(2) NOT NULL AUTO_INCREMENT,
   `nomTypeMat` varchar(20) NOT NULL,
   PRIMARY KEY (`numTypeMat`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  AUTO_INCREMENT=5 ;
 
 --
 -- Contenu de la table `type_mat`

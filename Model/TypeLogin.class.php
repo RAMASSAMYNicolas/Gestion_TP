@@ -1,16 +1,12 @@
 <?php
-class TypeLogin{
+class TypeLogin {
 
 	private $numTypeLogin;
 	private $nomTypeLogin;
 
-
 	function __construct($aNumTypeLogin, $aNomTypeLogin){
-
 		$this->$numTypeLogin  = $aNumTypeLogin;
 		$this->$nomTypeLogin  = $aNomTypeLogin;
-		
-
 	}
 
 	public function getNumTypeLogin(){

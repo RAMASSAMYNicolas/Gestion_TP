@@ -1,7 +1,7 @@
 <?php class TypeMatDB{
 
 
-	function getAllTypeMat(){
+	static function getAllTypeMat(){
 
 		$listTypeMat = array();
 		$connectionDB = new ConnectionDB();

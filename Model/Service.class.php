@@ -20,7 +20,7 @@ class Service{
 	public function getNomService(){
 		return $this->nomService;
 	}
-	public function setPassword($aNomService){
+	public function setNomService($aNomService){
 		$this->nomService = $aNomService; }
 }
 ?>

@@ -1,59 +1,51 @@
 <?php 
+echo 'Connexion'; 
 require_once('config.php');
-echo 'Page index \n'; 
-$listMarque 	= MarqueDB::getAllMarque();
-$listTypeMat 	= TypeMatDB::getAllTypeMat();
 $listEmploye 	= EmployeDB::getAllEmploye();
 ?>
 
 <HTML>
 	<HEAD>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Crud en php</title>
+        <title>Connexion</title>
 	</HEAD>
 
 	<BODY>
-		<hr><br />
-		<form name="gestion_materiel" method="POST">
-			<p><u>Nom du Matériel : 				</u><br /><input type="text" name="nomModeleMat"></p>
-			<p><u>Caractéristiques du Matériel : 	</u><br /><textarea input type="text" name="caracteristiquesMat" rows=5 cols=40></textarea></p>
-			<p><u>Date d'achat : 					</u><br /><input type="date" name="dateAchat"></p>
-			<p><u>Choix du Type de Matériel : 		</u><br />
-				<table cellpadding="5" cellspacing="1" width="50%">
-					<tr>
-						<th align="left" valign="middle">Type de matériel : 	</th>
-						<th align="left" valign="middle">Marque du matériel : 	</th>
-						<th align="left" valign="middle">Login  :				</th>
-					</tr>
-					<tr>
-						<td  valign="middle" >
-							<SELECT>
-								<OPTION></OPTION>
-								<?php foreach ($listTypeMat as $typeMat) { ?>
-								<OPTION value="<?php echo $typeMat->getNumTypeMat(); ?>"><?php echo $typeMat->getNumTypeMat().'. '.$typeMat->getNomTypeMat(); ?></OPTION>
-								<?php } ?>
-							</SELECT>
-						</td>
-						<td  valign="middle">
-							<SELECT>
-								<OPTION></OPTION>
-								<?php foreach ($listMarque as $marque) { ?>
-								<OPTION value="<?php echo $marque->getNumMarque(); ?>"><?php echo $marque->getNumMarque().'. '.$marque->getNomMarque(); ?></OPTION>
-								<?php } ?>
-							</SELECT>
-						</td>
-						<td  valign="middle">
-							<SELECT>
-								<OPTION></OPTION>
-								<?php foreach ($listEmploye as $employe) { ?>
-								<OPTION value="<?php echo $employe->getNumTypeMat(); ?>"><?php echo $employe->getNumTypeMat().'. '.$employe->getNomTypeMat(); ?></OPTION>
-								<?php } ?>
-							</SELECT>
-						</td>
-					</tr>
-				</table>
-			</p>
-			<input type="submit" name="add" value="Ajouter un Matériel">
-		</form>
+		<hr><br>
+		<table align="center" valign="middle" width="80%" border="1">
+			<tr>
+				<td valign="middle" width="40%">
+						<img src="http://www.lyc-vilgenis-massy.ac-versailles.fr/wp-content/uploads/sites/62/2016/08/LogoVilgenis-h156-vert719430-300x151.png" width="80%">	
+				</td>
+				<td align="center" valign="middle"><br>
+					<form name="connexion" method="POST" action="Index.php">
+						<p>Adresse e-Mail : <br /><input type="text" name="loginEmp"></p>
+						<p>Mot de passe : 	<br /><input type="text" name="passwordEmp"></p>
+						
+						<?php
+							$con = mysqli_connect('localhost', 'root', '', 'SIOA_TP_PRJ1');
+							if(isset($_POST['connect'])) {
+								if (empty($_POST['loginEmp']) || empty($_POST['passwordEmp']) ) {
+			        				echo '<p>'.'Veuillez remplir tous les champs'.'</p>';
+			    				}
+			    				else {
+			    					$sql = "SELECT loginEmp,passwordEmp FROM employe WHERE loginEmp ='".$_POST['loginEmp']."' AND '".$_POST['passwordEmp']."' ";
+									$req = mysqli_query($con, $sql);
+									$data = mysqli_fetch_assoc($req);
+									if ($data['loginEmp'] != $_POST['loginEmp']) {
+										echo '<p>'.'Identifiant incorrect'.'</p>'; }
+									else {
+										if ($data['passwordEmp'] != $_POST['passwordEmp']) 
+											{ echo '<p>'.'Mot de passe incorrect'.'</p>'; }
+										else { header('Location: Views/Menu.php');  }
+									}
+			    				}
+							}
+						?>
+						<input type="submit" name="connect" value="Connexion" style="float:right;">
+					</form>
+				</td>
+			</tr>
+		</table>
+		
 	</BODY>
 </HTML>

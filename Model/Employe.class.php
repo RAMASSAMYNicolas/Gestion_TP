@@ -1,5 +1,5 @@
 <?php
-class Employe {
+class Employer {
 
 	private $loginEmp;
 	private $passwordEmp;
@@ -44,7 +44,7 @@ class Employe {
 	}
 
 	public function getFirstName(){
-		return $this->$prenomEmp;
+		return $this->prenomEmp;
 	}
 	public function setFirstName($aPrenomEmp){
 		$this->$prenomEmp = $aPrenomEmp;

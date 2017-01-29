@@ -1,7 +1,6 @@
 <?php class MarqueDB{
 
-
-	function getAllMarque(){
+	static function getAllMarque(){
 
 		$listMarque = array();
 		$connectionDB = new ConnectionDB();
@@ -18,6 +17,10 @@
 
 		return $listMarque;
 	}
+
+	//function CreateMarque($listMarque){
+	//	$req = "INSERT INTO marque VALUES('"$marque->getNumMarque()."','".$marque->getNomMarque()."')";
+	//}
 	
 }
 ?>

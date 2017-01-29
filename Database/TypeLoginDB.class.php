@@ -1,7 +1,7 @@
 <?php class TypeLoginDB{
 
 
-	function getAllTypeLogin(){
+	static function getAllTypeLogin(){
 
 		$listTypeLogin = array();
 		$connectionDB = new ConnectionDB();
@@ -9,11 +9,11 @@
 		$req = "SELECT * FROM type_login";
 		$result = $con->query($req);
 		while($e = mysqli_fetch_array($result)) {
-			$emp = new TypeLogin(
+			$typLog = new TypeLogin(
 								$e['numTypeLogin'], 
 								$e['nomTypeLogin']					
 							);
-			array_push($listTypeLogin, $emp);
+			array_push($listTypeLogin, $typLog);
 		}
 
 		return $listTypeLogin;
